@@ -1,0 +1,150 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #76d4bd;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+    margin-bottom: 2rem;
+}
+#navbar > label{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+#fieldform_align{
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+#editfieldform_align{
+    margin: 1rem;
+}
+#fieldform,#editfieldform{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+#fieldform > input{
+    padding: 0.5rem;
+    font-size: 16px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+}
+#editfieldform > input{
+    padding: 0.5rem;
+    font-size: 16px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+}
+#fieldform > input::placeholder{
+    color: rgb(136, 130, 130);
+    font-size: 16px;
+}
+#editfieldform > input::placeholder{
+    color: rgb(136, 130, 130);
+    font-size: 16px;
+}
+#fieldform_align > button{
+    padding: 0.3rem 1rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #76d4bd;
+    color: #ffffff;
+    font-weight: 500;
+}
+#editfieldform_align > button{
+    padding: 0.3rem 1rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #76d4bd;
+    color: #ffffff;
+    font-weight: 500;
+}
+#fielddata{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 1.5rem;
+}
+.fielddata_item{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 0.5rem;
+}
+.operations{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    display: flex;
+    justify-content: space-evenly;
+}
+.operations > button{
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    #fielddata{
+        width: 95%;
+    }
+  }
+
+@media screen and (max-width: 570px) {
+    html{
+        font-size: 14px;
+    }
+   #fielddata{
+       width: 98%;
+   }
+   #fieldform > input{
+        font-size: 14px;
+   }
+   #editfieldform > input{
+    font-size: 14px;
+}
+   .operations > button{
+        font-size: 14px;
+        padding: 0.2rem 0.4rem;
+   }
+
+   #fieldform > input::placeholder{
+        font-size: 14px;
+   }
+   #editfieldform > input::placeholder{
+    font-size: 14px;
+}
+#fieldform_align > button
+{
+    padding: 0.2rem 0.6rem;
+    font-size: 14px;
+}
+#editfieldform_align > button
+{
+    padding: 0.2rem 0.6rem;
+    font-size: 14px;
+}
+ }
+
+ @media screen and (max-width: 350px){
+    #fielddata{
+        width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 340px){
+    #maindiv{
+        display: none;
+    }
+ }
+
+  
